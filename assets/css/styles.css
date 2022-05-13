@@ -167,25 +167,37 @@ html{
 #slider{
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../img/slider/backgroud1.jpg) top center / cover no-repeat;
-    /* background:linear-gradient(90deg,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('/assets/img/slider/backgroud3.jpg') top center / cover no-repeat; */
+    padding-top: 50%; 
+    background-image: url(../img/slider/backgroud1.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#slider .overlight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
 }
 
 #slider .text-content{
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     color: #fff;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    
 }
 #slider .text-heading{
+    text-align: center;
     font-size: 24px;
     margin-bottom: 25px;
 }
 #slider .text-description{
-
+    text-align: center;
 }
 /*content*/
 #content{

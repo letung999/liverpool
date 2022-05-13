@@ -51,5 +51,25 @@ for(var i = 0; i < menuItems.length; ++i){
     }
 }
 
+/*slide show */
+var i = 0;
+var images = [];
+var slideTime = 3000; 
+
+images[0] = 'assets/img/slider/backgroud1.jpg';
+images[1] = 'assets/img/slider/backgroud2.jpg';
+images[2] = 'assets/img/slider/backgroud3.jpg';
+
+function changePicture() {
+    document.getElementById('slider').style.backgroundImage = "url(" + images[i] + ")";
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;
 
 
